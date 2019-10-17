@@ -1,10 +1,11 @@
+# Importando
 import os; import time; import random
 
 # Esta Clase guarda todos los Errores que se pueden presentar
 class Errores():
 	def __init__(self):
 		pass
-
+   
 	def Error1(self):
 		tiempo = 5
 		print("-> Error 1: Este campo solo permite valores numericos")
