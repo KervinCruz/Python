@@ -4,7 +4,7 @@
 #--------------------------------------------------------------------
 # Costantes
 tiempo = 3        # Tiempo para transiciones Modos de Juego
-limpiar = "cls"    # Borrar pantalla Modos de Juego
+limpiar = "cls"    # Borrar pantalla Modos de Juego  ------------>  Si estas en:   Linux: "clear"    Mac: "clear"    Windows: "cls"
 tiempo_carga_modos = 0.5
 
 #--------------------------------------------------------------------
