@@ -1,4 +1,4 @@
-from Errores import *
+﻿from Errores import *
 from variables import *
 import os
 import time
@@ -75,6 +75,8 @@ def Variacion():
 				print()
 				print(" Proceso Logico:           Datos: m = " + convercionM + "   n = " + convercionN)
 				print()
+
+				#Imprimiendo el Proceso
 				print(parte1)
 				time.sleep(tiempo_espera)
 				print(parte2)
@@ -85,6 +87,7 @@ def Variacion():
 				time.sleep(tiempo_espera)
 				print(parte5)
 				time.sleep(tiempo_espera)
+
 				print()
 				print(" El resultado para la Variacion es: ",resultado)
 				print()
@@ -265,6 +268,8 @@ def Combinacion():
 				print()
 				print(" Proceso Logico:           Datos: m = " + convercionM + "   n = " + convercionN)
 				print()
+				
+				#Imprimiendo el Proceso
 				print(parte1)
 				time.sleep(tiempo_espera)
 				print(parte2)
@@ -277,6 +282,7 @@ def Combinacion():
 				time.sleep(tiempo_espera)
 				print(parte6)
 				time.sleep(tiempo_espera)
+
 				print()
 				print()
 				print(" El resultado para la Variacion es: ",resultado)
