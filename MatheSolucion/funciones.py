@@ -58,6 +58,8 @@ def Variacion():
 
 		resultado = m/divisor
 
+		parte5 = "   -> V = " + str(resultado)		
+
 		while True:
 			try:
 				os.system(borrar)
@@ -80,6 +82,8 @@ def Variacion():
 				print(parte3)
 				time.sleep(tiempo_espera)
 				print(parte4)
+				time.sleep(tiempo_espera)
+				print(parte5)
 				time.sleep(tiempo_espera)
 				print()
 				print(" El resultado para la Variacion es: ",resultado)
@@ -203,23 +207,48 @@ def Combinacion():
 		factorialM = m
 		factorialDivisor = divisor
 		
+		#Mostrar Proceso
+		convercionM = str(m)
+		convercionN = str(n)
+		convercionDivisor = str(divisor)
+		proceso_N = convercionN
+		proceso_M = convercionM
+		proceso_divisor = str(divisor)
+
+		parte1 = "   -> C = " + convercionM + "! / " + convercionN + "! * (" + convercionM + "-" + convercionN + ")!"
+		parte2 = "   -> C = " + convercionM + "! / " + convercionN + "! * " + convercionDivisor + "!"
+
 		# Factorizando M
+		sumando = 0
 		while factorialM > 1:
+			sumando += 1
+			proceso_M += "("+ convercionM +"-"+str(sumando)+")"
 			factorialM -= 1
 			m *= factorialM
 
 		# Factorizando N
+		sumando = 0
 		while factorialN > 1:
+			sumando += 1
+			proceso_N += "("+ convercionN +"-"+str(sumando)+")"
 			factorialN -= 1
 			n *= factorialN
 
 		# Factorizando M-N
+		sumando = 0
 		while factorialDivisor > 1:
+			sumando += 1
+			proceso_divisor += "("+ convercionDivisor +"-"+str(sumando)+")"
 			factorialDivisor -=1
 			divisor *= factorialDivisor
 
+		parte3 = "   -> C = " + proceso_M + " / " + proceso_N + " * " + proceso_divisor
+		parte4 = "   -> C = " + str(m) + " / " + str(n) + " * " + str(divisor)
+		parte5 = "   -> C = " + str(m) + " / " + str(n*divisor)
+
 		resultado = m/(n*divisor)
 
+		parte6 = "   -> C = " + str(resultado)
 
 		while True:
 			try:
@@ -233,6 +262,22 @@ def Combinacion():
 				print("   ***************************************")
 				print()
 				print("       Formula Lineal: C = m!/(n!*(m-n)!)")
+				print()
+				print(" Proceso Logico:           Datos: m = " + convercionM + "   n = " + convercionN)
+				print()
+				print(parte1)
+				time.sleep(tiempo_espera)
+				print(parte2)
+				time.sleep(tiempo_espera)
+				print(parte3)
+				time.sleep(tiempo_espera)
+				print(parte4)
+				time.sleep(tiempo_espera)
+				print(parte5)
+				time.sleep(tiempo_espera)
+				print(parte6)
+				time.sleep(tiempo_espera)
+				print()
 				print()
 				print(" El resultado para la Variacion es: ",resultado)
 				print()
