@@ -6,6 +6,7 @@ import os
 os.system(color_inicio)
 
 
+# Este es un comentario de Prueba
 
 while Inicio == True:
 	try:
